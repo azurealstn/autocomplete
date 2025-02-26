@@ -1,0 +1,143 @@
+import * as React from 'react';
+import TextField from '@mui/material/TextField';
+import Autocomplete from '@mui/material/Autocomplete';
+
+export default function ComboBox() {
+    return (
+        <Autocomplete
+            disablePortal
+            id="combo-box-demo"
+            options={top100Films}
+            sx={{ width: 300 }}
+            renderInput={(params) => <TextField {...params} label="Movie" />}
+        />
+    );
+}
+
+// Top 100 films as rated by IMDb users. http://www.imdb.com/chart/top
+const top100Films = [
+    { label: "쇼생크 탈출", year: 1994 },
+    { label: "대부", year: 1972 },
+    { label: "대부 2", year: 1974 },
+    { label: "다크 나이트", year: 2008 },
+    { label: "12명의 성난 사람들", year: 1957 },
+    { label: "쉰들러 리스트", year: 1993 },
+    { label: "펄프 픽션", year: 1994 },
+    {
+        label: "반지의 제왕: 왕의 귀환",
+        year: 2003,
+    },
+    { label: "좋은 놈, 나쁜 놈, 이상한 놈", year: 1966 },
+    { label: "파이트 클럽", year: 1999 },
+    {
+        label: "반지의 제왕: 반지 원정대",
+        year: 2001,
+    },
+    {
+        label: "스타워즈: 에피소드 5 - 제국의 역습",
+        year: 1980,
+    },
+    { label: "포레스트 검프", year: 1994 },
+    { label: "인셉션", year: 2010 },
+    {
+        label: "반지의 제왕: 두 개의 탑",
+        year: 2002,
+    },
+    { label: "뻐꾸기 둥지 위로 날아간 새", year: 1975 },
+    { label: "좋은 친구들", year: 1990 },
+    { label: "매트릭스", year: 1999 },
+    { label: "7인의 사무라이", year: 1954 },
+    {
+        label: "스타워즈: 에피소드 4 - 새로운 희망",
+        year: 1977,
+    },
+    { label: "시티 오브 갓", year: 2002 },
+    { label: "세븐", year: 1995 },
+    { label: "양들의 침묵", year: 1991 },
+    { label: "素晴らしき哉、人生！", year: 1946 },
+    { label: "인생은 아름다워", year: 1997 },
+    { label: "유주얼 서스펙트", year: 1995 },
+    { label: "레옹", year: 1994 },
+    { label: "센과 치히로의 행방불명", year: 2001 },
+    { label: "라이언 일병 구하기", year: 1998 },
+    { label: "원스 어폰 어 타임 인 웨스트", year: 1968 },
+    { label: "아메리칸 히스토리 X", year: 1998 },
+    { label: "인터스텔라", year: 2014 },
+    { label: "카사블랑카", year: 1942 },
+    { label: "시티 라이트", year: 1931 },
+    { label: "사이코", year: 1960 },
+    { label: "그린 마일", year: 1999 },
+    { label: "언터처블: 1%의 우정", year: 2011 },
+    { label: "모던 타임즈", year: 1936 },
+    { label: "레이더스", year: 1981 },
+    { label: "이창", year: 1954 },
+    { label: "피아니스트", year: 2002 },
+    { label: "디파티드", year: 2006 },
+    { label: "터미네이터 2: 심판의 날", year: 1991 },
+    { label: "백 투 더 퓨처", year: 1985 },
+    { label: "위플래쉬", year: 2014 },
+    { label: "글래디에이터", year: 2000 },
+    { label: "메멘토", year: 2000 },
+    { label: "프레스티지", year: 2006 },
+    { label: "라이온 킹", year: 1994 },
+    { label: "지옥의 묵시록", year: 1979 },
+    { label: "에일리언", year: 1979 },
+    { label: "선셋 대로", year: 1950 },
+    {
+        label: "닥터 스트레인지러브",
+        year: 1964,
+    },
+    { label: "위대한 독재자", year: 1940 },
+    { label: "시네마 천국", year: 1988 },
+    { label: "타인의 삶", year: 2006 },
+    { label: "반딧불이의 묘", year: 1988 },
+    { label: "영광의 길", year: 1957 },
+    { label: "장고: 분노의 추적자", year: 2012 },
+    { label: "샤이닝", year: 1980 },
+    { label: "월-E", year: 2008 },
+    { label: "아메리칸 뷰티", year: 1999 },
+    { label: "다크 나이트 라이즈", year: 2012 },
+    { label: "모노노케 히메", year: 1997 },
+    { label: "에일리언 2", year: 1986 },
+    { label: "올드보이", year: 2003 },
+    { label: "원스 어폰 어 타임 인 아메리카", year: 1984 },
+    { label: "기소의 증인", year: 1957 },
+    { label: "다스 보트", year: 1981 },
+    { label: "시민 케인", year: 1941 },
+    { label: "북북서로 진로를 돌려라", year: 1959 },
+    { label: "현기증", year: 1958 },
+    {
+        label: "스타워즈: 에피소드 6 - 제다이의 귀환",
+        year: 1983,
+    },
+    { label: "저수지의 개들", year: 1992 },
+    { label: "브레이브하트", year: 1995 },
+    { label: "M", year: 1931 },
+    { label: "레퀴엠 포 어 드림", year: 2000 },
+    { label: "아멜리에", year: 2001 },
+    { label: "시계태엽 오렌지", year: 1971 },
+    { label: "지상의 별처럼", year: 2007 },
+    { label: "택시 드라이버", year: 1976 },
+    { label: "아라비아의 로렌스", year: 1962 },
+    { label: "이중 배상", year: 1944 },
+    {
+        label: "이터널 선샤인",
+        year: 2004,
+    },
+    { label: "아마데우스", year: 1984 },
+    { label: "앵무새 죽이기", year: 1962 },
+    { label: "토이 스토리 3", year: 2010 },
+    { label: "로건", year: 2017 },
+    { label: "풀 메탈 자켓", year: 1987 },
+    { label: "당갈", year: 2016 },
+    { label: "스팅", year: 1973 },
+    { label: "2001: 스페이스 오디세이", year: 1968 },
+    { label: "사랑은 비를 타고", year: 1952 },
+    { label: "토이 스토리", year: 1995 },
+    { label: "자전거 도둑", year: 1948 },
+    { label: "꼬마", year: 1921 },
+    { label: "바스터즈: 거친 녀석들", year: 2009 },
+    { label: "스내치", year: 2000 },
+    { label: "세 얼간이", year: 2009 },
+    { label: "몬티 파이썬과 성배", year: 1975 },
+];
